@@ -27,9 +27,9 @@ class SVM(
   override def nonConformityMeasure(newSample: LabeledPoint) = {
     val score = predictor(newSample.features)
     if (newSample.label == 1.0) {
-      score
-    } else {
       -score
+    } else {
+      score
     }
   }
 }
