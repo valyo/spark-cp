@@ -3,8 +3,8 @@ package se.uu.farmbio.cp.alg
 import org.apache.spark.mllib.classification.SVMModel
 import org.apache.spark.mllib.linalg.Vector
 import org.apache.spark.mllib.linalg.Vectors
+import org.apache.spark.mllib.optimization.HingeGradient
 import org.apache.spark.mllib.optimization.LBFGS
-import org.apache.spark.mllib.optimization.LogisticGradient
 import org.apache.spark.mllib.optimization.SquaredL2Updater
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.mllib.util.MLUtils
