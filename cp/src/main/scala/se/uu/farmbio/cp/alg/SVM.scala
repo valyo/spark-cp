@@ -28,7 +28,7 @@ object SVM {
 
     val (weightsWithIntercept, loss) = LBFGS.runLBFGS(
       training,
-      new LogisticGradient(),
+      new HingeGradient(),
       new SquaredL2Updater(),
       numCorrections,
       convergenceTol,
